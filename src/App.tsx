@@ -1,4 +1,5 @@
 import ListGroup from './components/ListGroup'
+import Alert from './components/Alert';
 import './App.css'
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
 
   return (
     <>
+      <Alert>
+          This is my message
+      </Alert>
       <ListGroup items={items} heading="Cities" onSelectItem={onSelectItem} />
     </>
   );
